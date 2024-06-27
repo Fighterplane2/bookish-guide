@@ -1,7 +1,35 @@
-#kitty{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    top: 0;
-    left: 0;
+.body{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    display:grid;
+grid-template-areas: 
+'intro intro'
+'cities attractions'
+'images images'
+}
+
+.intro{
+    grid-area: intro;
+}
+
+.cities{
+    grid-area: cities;
+}
+
+.attractions{
+    grid-area: attractions;
+}
+
+.images{
+    grid-area: images;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+img{
+    width:auto;
+    height:150px;
 }
